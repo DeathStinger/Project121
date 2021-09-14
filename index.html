@@ -1,0 +1,193 @@
+<html>
+
+<head>
+  <title>Project 120</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+<center>
+<h1 class="btn btn-warning">CASE STUDY BETWEEN GOOGLE LENS AND MOBILENET</h1>
+<h2>GOOGLE LENS<img src="Google.png"></h2>
+<br>VS<br><h2>MOBILENET MODULE<h2 class="btn btn-info heading_div"></h2>
+
+
+<ol>
+
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="Bag.jpeg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - undefined
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - Skybags Bingo 02
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Google Lens is More Accurate</h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="Blanket.jpeg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a close up of a towel
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - Sakan Selimut Gebu Queen(180cm*200cm)030788
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Google Lens is More Accurate</h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="chair.jpeg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a bedroom with a purple chair
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - Naj Armchair by Brabbu in Armchairs
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Mobilenet Module is more Accurate</h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="painting.jpg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a painting hanging on a wall
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - M.Stanley-Small Painnting- Oil On Canvas - Woman IN Field
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Google Lens is More Accurate</h4>
+</div> 
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="Table.jpeg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a room filled with furniture and a large window
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - Acor Convertible Storage Coffee Table to Dining Table
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Mobilenet Module is More Accurate</h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="tissues.jpg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a close up of a box
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - Facial Tissue(Box) With Fragrance 100 Counts
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Google Lens is More Accurate</h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="TV.jpg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a flat screen tv sitting on top of a television
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - LCD TV - Television - 47G70YD - LG Electronics Australia
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4>Google Lens is More Accurate </h4>
+</div>
+</div> 
+<br>
+<div class="test_images_and_results col-xs-12">
+  <li class="col-sm-4 col-xs-12">
+<b>Test - </b>
+<img src="Wallet.jpeg" class="img-responsive">
+  </li>
+  <h5 class="col-sm-4 col-xs-12">
+    Output On<b>Mobilenet Module</b> - a piece of luggage
+    <span></span>
+</h5>
+<h5 class="col-sm-4 col-xs-12">
+  Output On<b>Google Lens</b> - indiamart.com
+  <span></span>
+</h5>
+<div class="mini_results" class="col-xs-12">
+<h4>Results - </h4>
+<hr>
+<h4> Mobilenet Module is More Accurate</h4>
+</div>
+</div> 
+<br><h4 class="btn btn-warning">GOOGLE LENS Predicted 5 of them more accurately.And MOBILENET was less accurate.
+  <br>So According to my Case Study, Google Lens is More Accurate.
+</h4>
+</center>
+</h2>
+<script src="main.js"></script>
+</body>
+
+</html>
